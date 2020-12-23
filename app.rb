@@ -7,13 +7,13 @@ class App < Sinatra::Base
   end 
   
   post '/newteam' do 
-    @team_name = params["team_name"]
+    @team_name = params["name"]
     @coach = params["coach"]
-    @point_guard = params["point_guard"]
-    @shooting_guard = params["shooting_guard"]
-    @small_forward = params["small_forward"]
-    @pf = params["power_forward"]
-    @c = params["center"]
+    @point_guard = params["pg"]
+    @shooting_guard = params["sg"]
+    @small_forward = params["sf"]
+    @pf = params["pf"]
+    @c = params["c"]
     
     erb :team
   end
